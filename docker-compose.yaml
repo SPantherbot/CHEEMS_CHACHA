@@ -1,0 +1,3 @@
+  ports:
+  - type: container_port
+    port: 3306
