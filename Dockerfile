@@ -32,7 +32,7 @@ RUN sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/s
     && echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
 
 # Set the root password (replace 'your_password' with your desired password)
-RUN echo 'root:your_password' | chpasswd
+RUN echo root:iamgoodboy | chpasswd
 
 # Start the SSH service and make the startup script executable
 RUN service ssh start \
