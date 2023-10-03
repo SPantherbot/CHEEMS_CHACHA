@@ -15,6 +15,6 @@ RUN echo 'PermitRootLogin yes' >>  /etc/ssh/sshd_config
 RUN echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
 RUN echo root:kaal|chpasswd
 RUN service ssh start
-RUN chmod +x 755 /kaal.sh
+RUN chmod  755 /kaal.sh
 EXPOSE 80 
 CMD  /kaal.sh
